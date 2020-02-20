@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorBackground"
+    tools:context=".login">
+
+    <TextView
+        android:id="@+id/labelCo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:textColor="@color/white"
+        android:text="Connexion"
+        android:textSize="35dp"
+        android:layout_marginTop="120dp"
+        android:layout_marginBottom="90dp"
+
+        />
+
+    <TextView
+        android:id="@+id/labelId"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/tb_id"
+        android:layout_alignLeft="@+id/tb_id"
+        android:text="Pseudo ou E-mail"
+        android:textSize="15dp"
+        android:textColor="@color/textBox"
+        android:layout_marginLeft="10dp"
+        android:layout_marginBottom="8dp"
+        />
+    <EditText
+        android:id="@+id/tb_id"
+        android:layout_width="300dp"
+        android:layout_height="40dp"
+        android:padding="10dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/labelCo"
+        android:layout_marginBottom="80dp"
+        android:background="@drawable/tb_radius"
+
+        />
+
+    <TextView
+        android:id="@+id/labelPass"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/tb_pass"
+        android:layout_alignLeft="@+id/tb_pass"
+        android:text="Mot de passe"
+        android:textSize="15dp"
+        android:textColor="@color/textBox"
+        android:layout_marginLeft="10dp"
+        android:layout_marginBottom="8dp"
+        />
+    <EditText
+        android:id="@+id/tb_pass"
+        android:padding="10dp"
+        android:layout_width="300dp"
+        android:layout_height="40dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/tb_id"
+        android:layout_marginBottom="80dp"
+        android:background="@drawable/tb_radius"
+
+        />
+
+    <Button
+        android:id="@+id/btn_co"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_marginBottom="40dp"
+        android:layout_centerHorizontal="true"
+        android:text="Connexion"
+        android:background="@color/colorBackgroundBtn"
+        android:textColor="@color/white"
+        android:layout_below="@+id/tb_pass"
+        android:textSize="20dp"
+        />
+
+    <TextView
+        android:id="@+id/labelSignIn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tb_pass"
+        android:layout_centerHorizontal="true"
+        android:text="S'inscrire"
+        android:textSize="15dp"
+        android:textColor="@color/textBox"
+        android:layout_marginTop="70dp"
+        android:clickable="true"
+        />
+
+
+</RelativeLayout>

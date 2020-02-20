@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorBackground"
+    tools:context=".inscription">
+
+
+    <TextView
+        android:id="@+id/labelIns"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:textColor="@color/white"
+        android:text="Inscription"
+        android:textSize="35dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginBottom="30dp"
+
+        />
+
+    <TextView
+        android:id="@+id/labelNom"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/tb_nom"
+        android:layout_alignLeft="@+id/tb_nom"
+        android:text="Nom"
+        android:textSize="15dp"
+        android:textColor="@color/textBox"
+        android:layout_marginLeft="10dp"
+        android:layout_marginBottom="8dp"
+        />
+    <EditText
+        android:id="@+id/tb_nom"
+        android:layout_width="300dp"
+        android:layout_height="40dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/labelIns"
+        android:layout_marginBottom="40dp"
+        android:background="@drawable/tb_radius"
+        android:padding="10dp"
+
+        />
+
+    <TextView
+        android:id="@+id/labelPrenom"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/tb_prenom"
+        android:layout_alignLeft="@+id/tb_prenom"
+        android:text="Prénom"
+        android:textSize="15dp"
+        android:textColor="@color/textBox"
+        android:layout_marginLeft="10dp"
+        android:layout_marginBottom="8dp"
+        />
+    <EditText
+        android:id="@+id/tb_prenom"
+        android:layout_width="300dp"
+        android:layout_height="40dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/tb_nom"
+        android:layout_marginBottom="40dp"
+        android:background="@drawable/tb_radius"
+        android:padding="10dp"
+
+        />
+    <TextView
+        android:id="@+id/labelMail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/tb_mail"
+        android:layout_alignLeft="@+id/tb_mail"
+        android:text="Mail"
+        android:textSize="15dp"
+        android:textColor="@color/textBox"
+        android:layout_marginLeft="10dp"
+        android:layout_marginBottom="8dp"
+        />
+    <EditText
+        android:id="@+id/tb_mail"
+        android:layout_width="300dp"
+        android:layout_height="40dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/tb_prenom"
+        android:layout_marginBottom="40dp"
+        android:background="@drawable/tb_radius"
+        android:padding="10dp"
+
+        />
+
+    <TextView
+        android:id="@+id/labelPseudo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/tb_pseudo"
+        android:layout_alignLeft="@+id/tb_pseudo"
+        android:text="Pseudo"
+        android:textSize="15dp"
+        android:textColor="@color/textBox"
+        android:layout_marginLeft="10dp"
+        android:layout_marginBottom="8dp"
+        />
+    <EditText
+        android:id="@+id/tb_pseudo"
+        android:layout_width="300dp"
+        android:layout_height="40dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/tb_mail"
+        android:layout_marginBottom="40dp"
+        android:background="@drawable/tb_radius"
+        android:padding="10dp"
+
+        />
+
+    <TextView
+        android:id="@+id/labelBirth"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/tb_birth"
+        android:layout_alignLeft="@+id/tb_birth"
+        android:text="Date de Naissance"
+        android:textSize="15dp"
+        android:textColor="@color/textBox"
+        android:layout_marginLeft="10dp"
+        android:layout_marginBottom="8dp"
+        />
+
+    <EditText
+        android:id="@+id/tb_birth"
+        android:layout_width="300dp"
+        android:layout_height="40dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/tb_pseudo"
+        android:layout_marginBottom="40dp"
+        android:background="@drawable/tb_radius"
+        android:padding="10dp"
+
+        />
+
+    <TextView
+        android:id="@+id/labelIam"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/tb_iam"
+        android:layout_alignLeft="@+id/tb_iam"
+        android:text="Je suis"
+        android:textSize="15dp"
+        android:textColor="@color/textBox"
+        android:layout_marginLeft="10dp"
+        android:layout_marginBottom="8dp"
+        />
+    <Spinner
+        android:id="@+id/tb_iam"
+        android:layout_width="300dp"
+        android:layout_height="40dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/tb_birth"
+        android:layout_marginBottom="40dp"
+        android:background="@drawable/tb_radius"
+        android:padding="10dp"
+
+        />
+
+    <TextView
+        android:id="@+id/labelMdp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/tb_mdp"
+        android:layout_alignLeft="@+id/tb_mdp"
+        android:text="Mot de passe"
+        android:textSize="15dp"
+        android:textColor="@color/textBox"
+        android:layout_marginLeft="10dp"
+        android:layout_marginBottom="8dp"
+        />
+    <EditText
+        android:id="@+id/tb_mdp"
+        android:layout_width="300dp"
+        android:layout_height="40dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/tb_iam"
+        android:layout_marginBottom="40dp"
+        android:background="@drawable/tb_radius"
+        android:padding="10dp"
+
+        />
+    <Button
+        android:id="@+id/btn_ins"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_marginBottom="40dp"
+        android:layout_centerHorizontal="true"
+        android:text="S'inscrire"
+        android:background="@color/colorBackgroundBtn"
+        android:textColor="@color/white"
+        android:layout_below="@+id/tb_mdp"
+        />
+
+
+</RelativeLayout>
